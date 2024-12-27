@@ -303,6 +303,15 @@ NUMBERS: dict[str, tuple[NumberEntityDescription, ...]] = {
             entity_category=EntityCategory.CONFIG,
         ),
     ),
+    "xktyd": (
+        NumberEntityDescription(
+            key=DPCode.COUNTDOWN,
+            name="Timer",
+            native_unit_of_measurement=UnitOfTime.SECONDS,
+            device_class=NumberDeviceClass.DURATION,
+            entity_category=EntityCategory.CONFIG,
+        ),
+    ),
 }
 
 

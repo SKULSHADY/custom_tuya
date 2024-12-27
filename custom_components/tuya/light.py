@@ -382,6 +382,13 @@ LIGHTS: dict[str, tuple[TuyaLightEntityDescription, ...]] = {
             brightness=DPCode.BRIGHT_VALUE_1,
         ),
     ),
+    "xktyd": (
+        TuyaLightEntityDescription(
+            key=DPCode.SWITCH_LED,
+            brightness=DPCode.BRIGHT_VALUE,
+            color_data=DPCode.COLOUR_DATA,
+        ),
+    ),
 }
 
 # Socket (duplicate of `kg`)
